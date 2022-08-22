@@ -3,13 +3,41 @@ Con tus propias palabras explica los siguientes conceptos.
 
 
 - Callbacks
+	es una funcion que se pasa por argumento a otra funcion para completar un rutina o accion
 
 - Funcionamiento de Map()
+	Map() funciona creando un array nuevo a partir de parametros establecidos y esto lo hace
+	atravez de una funcion que se aplica a cada uno de los emlementos sin cambiar el array
+	original.
 
 - Funcionamiento de Reduce()
+	reduce () realiza una iteracion en cada elemento de un array, de ahi ejecuta una funcion 
+	reductora que puede sumar elementos de un array, concatenar arrays, etc. y devuelve un
+	unico resultado.
 
 - Funcionamiento de Filter()
+	filter funciona haciendo un filtro de uno o mas elementos de de un array en base a algun
+	concepto determinado.
 
 - Funcionamiento de forEach()
+	el metodo forEach ejecuta una funcion determinada en cada elemento de un array, 
+	recorriendo los mismos uno por uno.
 
 - En que situacion usarias un filter?
+	usaria filter por ejemplo si tuviera de seleccionar key/values de una lista bajo el 
+	parametro de seleccion del caso corespondiente, por ejemplo una lista de inscriptos de
+	un curso o capacitacion, y necesito saber cuales son mayores de edad.
+
+	let gente = [
+    		{nombre: "Juan", edad: 27},
+    		{nombre: "Emma", edad: 2},
+		{nombre: "Caro", edad: 13},
+		{nombre: "Daniel", edad: 3},
+    		{nombre: "Isabela", edad: 25},
+    		{nombre: "Luis", edad: 1},
+    		{nombre: "Jorge", edad: 43},
+		    ]
+
+let mayores = gente.filter(persona => persona.edad >= 18)
+
+console.log(mayores)
