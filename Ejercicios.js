@@ -39,10 +39,18 @@ function Array(element, index, array) {
 array.forEach(Array);
 
 
-function map(array, cb) {
+//function map(array, cb) {
     // Crea un nuevo array
     // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
     // El nuevo array debe tener la misma longitud que el array del argumento
     // Aqui tu codigo
-}  
+//}  
+var array1 = [1,2,3,4,5,6,7,8]
 
+var array2 = array1.map(function(x) {
+
+return x;
+
+});
+console.log(array1)
+console.log(array2)
